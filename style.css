@@ -1,0 +1,86 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("canva101.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+  overflow-x: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.text {
+  color: #93252a;
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: 60px;
+}
+
+.small-text {
+  color: #93252a;
+  font-weight: bold;
+  font-size: 28px;
+  margin-top: 40px;
+}
+
+.choice-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 40px;
+}
+
+.choice-container img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.center-img {
+  width: 300px;
+  margin-top: 40px;
+}
+
+button {
+  font-family: 'Indie Flower', cursive;
+  font-size: 30px;
+  font-weight: bold;
+  background: transparent;
+  border: none;
+  color: #93252a;
+  cursor: pointer;
+  margin: 20px;
+}
+button:hover {
+  color: #ff5a5a;          /* changes text color on hover */
+  transform: scale(1.2);    /* grows the button */
+  transition: all 0.3s ease;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* subtle shadow */
+}
+.slide {
+  position: absolute;
+  top: 50%;
+  right:0;
+  transform: translateY(150%, -50%);
+  white-space: nowrap;
+  animation: slideLR 10s linear forwards;
+}
+
+@keyframes slideLR {
+  0% {
+    transform: translate(150%, -50%);
+  }
+
+  100% {
+    transform: translate(-250%, -50%);
+  }
+}
