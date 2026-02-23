@@ -5,7 +5,7 @@ body {
   background-image: url("canva101.png");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  
   font-family: 'Indie Flower', cursive;
   text-align: center;
   overflow-x: hidden;
@@ -83,4 +83,5 @@ button:hover {
   100% {
     transform: translate(-250%, -50%);
   }
+
 }
