@@ -56,7 +56,7 @@ function choose() {
 
 function showFinalQuestion() {
   content.innerHTML = `
-    <div class="text">so do you want to go out with me ?</div>
+    <div class="text"> wanna grab coffee with me sometime ?</div>
     <button onclick="yesOption(event)">yes</button>
     <button onclick="noOption(event)">no</button>
   `;
@@ -215,3 +215,4 @@ function showEmptyClickPage() {
   }, 1000); 
 }
   
+
